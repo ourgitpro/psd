@@ -1,0 +1,296 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "titillium web" sans-serif;
+  font-size: 16px;
+}
+ul li {
+  list-style-type: none;
+}
+h1 {
+  font-size: 30px;
+  color: #fff;
+}
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+  height: 0;
+  visibility: hidden;
+}
+
+.row {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+section {
+  padding: 80px 0;
+}
+h2 {
+  font-size: 40px;
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+  font-weight: 600;
+  margin-top: 0px;
+  margin-bottom: 20px;
+  color: #fff;
+}
+h2::after {
+  content: "";
+  display: block;
+  height: 4px;
+  background: #fff;
+  width: 85px;
+  margin: auto;
+  margin-top: 20px;
+}
+h3 {
+  font-size: 24px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #fff;
+}
+.box {
+  padding: 1%;
+}
+.box p {
+  font-size: 16px;
+  font-weight: 300;
+  margin-top: 20px;
+}
+.little-description {
+  font-size: 18px;
+  width: 60%;
+  margin-left: 20%;
+  line-height: 30px;
+}
+header {
+  background: #87509c;
+  height: 75vh;
+  position: relative;
+}
+.logo {
+  height: 35px;
+  width: auto;
+  margin-top: 35px;
+  float: left;
+}
+.main-nav {
+  float: right;
+  margin-top: 40px;
+}
+.main-nav li {
+  display: inline-block;
+
+  margin-left: 10px;
+}
+.main-nav li a:link,
+.main-nav li a:visited {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  text-transform: uppercase;
+  background: #3e744396;
+  padding: 3px 16px;
+  border-radius: 3px;
+  display: inline-block;
+  font-size: 16px;
+  transition: 0.3s;
+}
+.main-nav li:first-child {
+  margin-left: 0;
+}
+.main-nav li:hover a:link,
+.main-nav li:hover a:visited {
+  background: #3a3e79;
+}
+
+.hero-text-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.btn:link,
+.btn:visited,
+.btn {
+  background: #333;
+  border-bottom: 3px solid #000;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 10px 30px;
+  border-radius: 5px;
+  display: inline-block;
+  margin-top: 40px;
+}
+.btn-hero:link,
+.btn-hero:visited {
+  background: #eb7d4b;
+  border-color: #c86a40;
+}
+.services-section {
+  color: #fff;
+  background: #17c2a4;
+  text-align: center;
+}
+.services-section h2::after {
+  background: #14a58c;
+}
+.services-icon {
+  height: 128px;
+  margin-top: 45px;
+  margin-bottom: 35px;
+}
+.team-member {
+  width: 200px;
+  height: 200px;
+  clip-path: circle();
+  margin-top: 45px;
+  margin-bottom: 35px;
+}
+.team-section {
+  background: #e7f1f8;
+  text-align: center;
+}
+
+.team-section h2 {
+  color: #3c4761;
+}
+.team-section h2::after {
+  background: #c8d9e5;
+}
+.team-section h3 {
+  color: #27283d;
+}
+.role {
+  color: #79d0ee;
+  font-size: 16px;
+  text-transform: uppercase;
+  margin-top: 5px;
+}
+.team-section .box p {
+  color: #3c4761;
+  font-size: 16px;
+}
+.social-link {
+  margin-top: 45px;
+  color: #fff;
+}
+.social-link ul li {
+  display: inline-block;
+  margin: 0 5px;
+  color: #fff;
+}
+.social-link ul li a:link {
+  color: #fff;
+}
+.social-link ul li a:link i::before {
+  background: #bdd1df;
+
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 50%;
+  transition: 0.5s;
+}
+.social-link ul li a:hover i::before {
+  background: #393939;
+  transform: rotate(360deg);
+}
+.skill-section {
+  color: #3c4761;
+  background: #fff;
+  text-align: center;
+}
+.skill-section h2 {
+  color: #3c4761;
+}
+.skill-section h2::after {
+  background: #dfe8ed;
+}
+.little-description {
+  font-size: 20px;
+  width: 60%;
+  margin-left: 20%;
+  line-height: 30px;
+}
+.skill-section h3 {
+  color: #3c4761;
+}
+.skill-section .box {
+  margin-top: 45px;
+}
+svg.radial-progress circle {
+  stroke-width: 5;
+}
+svg.radial-progress text {
+  fill: #393939;
+  font-size: 15px;
+}
+
+svg.web-design circle {
+  stroke: #30bae7;
+}
+svg.HTML-CSS circle {
+  stroke: #d74680;
+}
+svg.GRAPHIC-DESIGN circle {
+  stroke: #15c7a8;
+}
+svg.UI-UX circle {
+  stroke: #eb7d4b;
+}
+.portfolio-section {
+  background: #ffdd99;
+  text-align: center;
+}
+.portfolio-section h2 {
+  color: #3c4761;
+}
+.portfolio-section h2::after {
+  background: #e5c37f;
+}
+.portfolio-filter {
+  margin: 45px 0;
+}
+.portfolio-filter button {
+  background: #ebc985;
+  font-size: 18px;
+  padding: 10px 20px;
+  border: 0;
+  border-radius: 5px;
+  color: #3c4761;
+  margin: 0 5px;
+  text-transform: uppercase;
+}
+.portfolio-filter button:hover {
+  cursor: pointer;
+  box-shadow: inset 0 3px 5px #3c4761;
+}
+.portfolio-image {
+  width: 100%;
+  height: 300px;
+}
+.portfolio-section .col:nth-child(3) {
+  margin-left: 0;
+}
+h4 {
+  font-size: 18px;
+  font-weight: 400px;
+  text-transform: uppercase;
+  margin-top: 25px;
+}
+.portfolio-section .btn-load-more {
+  background: #17c2a4;
+  border-color: #14a58c;
+}
+.portfolio-section .mixitup-control-active {
+  background: #fff;
+}
